@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "Eco Bamboo Cup",
+      "price": 199,
+      "imageUrl": "https://images.pexels.com/photos/7303870/pexels-photo-7303870.jpeg",
+      "category": "Kitchen",
+      "onSale": false
+    },
+    {
+      "id": 2,
+      "name": "Reusable Shopping Bag",
+      "price": 129,
+      "imageUrl": "https://images.pexels.com/photos/4856590/pexels-photo-4856590.jpeg",
+      "category": "Accessories",
+      "onSale": true
+    }
+  ]
+  
