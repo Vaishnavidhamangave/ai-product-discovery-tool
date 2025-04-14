@@ -1,0 +1,224 @@
+.preferences-container {
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.preferences-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.preferences-text {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.preferences-section {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.preferences-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #1e293b;
+}
+
+.preferences-list {
+  list-style: disc;
+  margin-left: 1.5rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+/* Toggle Switch Styles */
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #374151;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  width: 40px;
+  height: 20px;
+  background-color: #d1d5db;
+  border-radius: 9999px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle input:checked + .slider {
+  background-color: #10b981;
+}
+
+.toggle input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* Pulse animation for title */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+.animate-pulse {
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+/* Fade-in effect */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Slight slide-up + fade-in */
+.fade-in-up {
+  animation: fadeUp 1.2s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glow effect for smart suggestions */
+.glow li {
+  transition: color 0.3s, text-shadow 0.3s;
+}
+.glow li:hover {
+  color: #10b981;
+  text-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+  cursor: pointer;
+}
+
+/* Enhance toggle hover */
+.toggle:hover .slider {
+  box-shadow: 0 0 5px rgba(16, 185, 129, 0.3);
+}
+
+/* Extra spacing for Smart Suggestions */
+.smart-suggestions {
+  margin-top: 2.5rem;
+  background-color: #ecfdf5;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+}
+
+.colorful-bg {
+  background: linear-gradient(135deg, #e0ffe7, #f9f9ff);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.rainbow-text {
+  background: linear-gradient(45deg, #06b6d4, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+/* ✅ Updated brand badge styling */
+.brand-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.brand-badge {
+  background-color: #d1f2eb;
+  color: #1a535c;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.brand-badge:hover {
+  background-color: #a3e4d7;
+  transform: scale(1.05);
+}
+
+.toggle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colorful-toggle input:checked + .slider {
+  background-color: #22c55e;
+}
+
+.highlight-text {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #4f46e5;
+}
+
+.product-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 160px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
